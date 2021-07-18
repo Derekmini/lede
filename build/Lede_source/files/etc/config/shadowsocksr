@@ -1,33 +1,29 @@
 
 config global
-	option netflix_server 'nil'
-	option netflix_proxy '0'
 	option threads '0'
 	option dports '2'
 	option pdnsd_enable '1'
 	option tunnel_forward '8.8.4.4:53'
 	option monitor_enable '1'
-	option enable_switch '1'
-	option switch_time '667'
-	option switch_timeout '5'
-	option switch_try_count '3'
-	option gfwlist_url 'https://ghproxy.com/https://raw.githubusercontent.com/YW5vbnltb3Vz/domain-list-community/release/gfwlist.txt'
+	option gfwlist_url 'https://raw.sevencdn.com/YW5vbnltb3Vz/domain-list-community/release/gfwlist.txt'
 	option chnroute_url 'https://ispip.clang.cn/all_cn.txt'
-	option nfip_url 'https://ghproxy.com/https://raw.githubusercontent.com/QiuSimons/Netflix_IP/master/NF_only.txt'
-	option adblock_url 'https://ghproxy.com/https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf'
+	option nfip_url 'https://raw.sevencdn.com/QiuSimons/Netflix_IP/master/NF_only.txt'
+	option netflix_proxy '1'
+	option netflix_server 'nil'
+	option enable_switch '0'
+	option adblock '0'
 	option run_mode 'router'
-	option global_server 'nil'
+	option global_server 'cfg134a8f'
 
 config server_subscribe
-	option proxy '0'
 	option auto_update_time '2'
-	option auto_update '1'
-	list subscribe_url 'https://dingyue.suying666.info/link/BTs9E3vUf0wt0pu1?sub=1'
-	option switch '1'
+	option auto_update '0'
+	option switch '0'
+	option proxy '0'
 	option filter_words '香港/日本/俄罗斯/V4'
+	list subscribe_url 'https://dingyue.suying666.info/link/BTs9E3vUf0wt0pu1?sub=1'
 
 config access_control
-	option lan_ac_mode '0'
 	option router_proxy '1'
 	list wan_fw_ips '149.154.160.0/20'
 	list wan_fw_ips '67.198.55.0/24'
@@ -35,6 +31,11 @@ config access_control
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
 	list Interface 'lan'
+	option lan_ac_mode '0'
+	list lan_bp_ips '10.1.1.124'
+	list lan_bp_ips '10.1.1.176'
+	list lan_bp_ips '10.1.1.211'
+	list lan_bp_ips '10.1.1.226'
 
 config socks5_proxy
 	option server 'nil'
@@ -58,7 +59,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转2938|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 	option ip '120.232.214.228'
 
 config servers
@@ -76,8 +77,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转2939|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
-	option ip '120.232.214.228'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -94,8 +94,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转2948|广东-台湾|解锁|x1.2'
 	option server 'guangdong01.ddns-only.xyz'
-	option switch_enable '1'
-	option ip '120.232.214.27'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -112,7 +111,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3050|广东-新加坡|x1.3'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -129,7 +128,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3051|广东-新加坡|x1.3'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -146,7 +145,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3052|广东-新加坡|x1.3'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -163,7 +162,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3053|广东-新加坡|x1.3'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -180,7 +179,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3054|广东-新加坡|x1.3'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -197,8 +196,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3316|广东-台湾|解锁|x1.5'
 	option server 'guangdong01.ddns-only.xyz'
-	option switch_enable '1'
-	option ip '120.232.214.27'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -215,7 +213,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3317|广东-台湾|解锁|x1.5'
 	option server 'guangdong01.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -232,7 +230,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3318|广东-台湾|解锁|x1.5'
 	option server 'guangdong01.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -249,7 +247,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3370|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -266,7 +264,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3371|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -283,7 +281,8 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3372|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
+	option ip '120.232.214.228'
 
 config servers
 	option type 'ssr'
@@ -300,7 +299,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3373|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -317,7 +316,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3374|广东-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -334,7 +333,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3383|广东-台湾|解锁|x1.5'
 	option server 'guangdong01.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -351,7 +350,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3570|广东-新加坡|x2.0'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -368,7 +367,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3572|广东-新加坡|x2.0'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -385,7 +384,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3574|广东-新加坡|x2.0'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -402,8 +401,7 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3576|广东-新加坡|x2.0'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
-	option ip '120.232.214.228'
+	option switch_enable '0'
 
 config servers
 	option type 'ssr'
@@ -420,5 +418,5 @@ config servers
 	option protocol_param '103175:SN4Xdk'
 	option alias '[速鹰666] V3-中转3578|广东-新加坡|x2.0'
 	option server 'linode-zy.ddns-only.xyz'
-	option switch_enable '1'
+	option switch_enable '0'
 
